@@ -6,15 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Bryan Pursell Web Developer</title>
 </head>
 
 <body>
   <header>
     <nav class="nav">
-      <a id="about-link" class="active">About Me</a>
-      <a href="#projects" id="projects-link">Projects</a>
-      <a href="#contact" id="contact-link">Contact</a>
+      <a id="about-link" class="active nav-link">About</a>
+      <a href="#projects" id="projects-link" class="nav-link">Projects</a>
+      <a href="#contact" id="contact-link" class="nav-link">Contact</a>
     </nav>
   </header>
 
@@ -24,37 +27,51 @@
         <img src="me Medium.jpeg" class="me" alt="Me at Bryce Canyon">
       </div>
       <div class="col-2">
-        <h1 class="intro">Hi, I'm Bryan.<span class="white-text"> I'm a web developer.</span></h1>
-        <p>I'm currently using HTML - CSS - JAVASCRIPT to create and learn.</p>
-        <p>I'm looking for a front end role where I can learn and grow as a developer. </p>
-        <p>
-          I have a background in mechanics and have been working as a mechanic for the last 10 years. I have learned
-          valuable problem solving skills in my industry. Those skills tranfer to web development perfectly as I know
-          that there are several different ways to
-          solve a problem and I'm great at finding the most efficient solution.
-        </p>
-        <p>
-          I'm a fun, easy going person. I get along well with just about anybody. I have great communication skills. I
-          work well in a team setting or along. I prefer to work in a team setting where I can bounce ideas off of
-          co-workers and also help co-workers when they're stuck on a problem.
-        </p>
-        <p>
-          My hobbies include riding dirt bikes, camping, almost anything outdoors related. I love music. Anything from
-          chill lofi tunes to metal.
-        </p>
+        <div class="intro-text">
+          <h1 class="intro">Hi, I'm Bryan.<span class="intro-color-change"> I'm a web developer.</span></h1>
+        </div>
+        <div class="info">
+          <p>I'm currently using HTML - CSS - JAVASCRIPT to create and learn.</p>
+          <p>I'm looking for a front end role where I can learn and grow as a developer. </p>
+          <p>
+            I have a background in mechanics and have been working as a mechanic for the last 10 years. I have learned
+            valuable problem solving skills in my industry. Those skills tranfer to web development perfectly as I know
+            that there are several different ways to
+            solve a problem and I'm great at finding the most efficient solution.
+          </p>
+          <p>
+            I'm a fun, easy going person. I get along well with just about anybody. I have great communication skills. I
+            work well in a team setting or along. I prefer to work in a team setting where I can bounce ideas off of
+            co-workers and also help co-workers when they're stuck on a problem.
+          </p>
+          <p>
+            My hobbies include riding dirt bikes, camping, almost anything outdoors related. I love music. Anything from
+            chill lofi tunes to metal.
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="projects">
-      <h2>Projects</h2>
+      <p class="section-heading">Projects</p>
       <article class="display-project"></article>
       <article class="display-project"></article>
       <article class="display-project"></article>
     </section>
 
     <section id="contact">
-      <h2 id="contact" class="section-heading">Contact Me</h2>
-      <p>Email me: <a href="">bryanpursell2@hotmail.com</a></p>
+      <p class="section-heading">Contact</p>
+      <div id="icon-links">
+        <div id="email-icon" class="icon">
+          <p><i class="fa-sharp fa-solid fa-envelope fa-2xl"></i></p>
+        </div>
+        <div id="twitter" class="icon">
+          <p id="twitter-icon"><i class="fa-brands fa-twitter fa-2xl"></i></p>
+        </div>
+        <div id="linkedin" class="icon">
+          <p id="email-icon"><i class="fa-brands fa-linkedin fa-2xl"></i></p>
+        </div>
+      </div>
     </section>
   </main>
 
